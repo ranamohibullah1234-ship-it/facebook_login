@@ -1,0 +1,194 @@
+
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(185, 205, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px 15px;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Main Sign Up */
+.sign-up {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* Heading */
+.sign-up h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+/* Paragraph */
+.sign-up p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* First Name and Last Name */
+.input {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* All Inputs */
+.sign-up input {
+    width: 100%;
+    min-width: 0;
+    height: 42px;
+    padding: 0 12px;
+    font-size: 15px;
+    font-family: inherit;
+    border: 1px solid #b8c0c8;
+    border-radius: 6px;
+    background-color: #f7f9fa;
+}
+
+/* Email and Password */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Terms Text */
+.sign-up .terms {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+    overflow-wrap: break-word;
+}
+
+/* Sign Up Button */
+.sign-up button {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: 42px;
+    margin: 0 auto 25px;
+    background-color: rgb(18, 146, 18);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Horizontal Line */
+.sign-up hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Login Link */
+.sign-up .account {
+    text-align: center;
+    font-size: 14px;
+}
+
+.account a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+    .sign-up {
+        max-width: 650px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+    body {
+        padding: 25px 20px;
+    }
+
+    .sign-up {
+        max-width: 550px;
+        padding: 25px;
+    }
+
+    .sign-up h1 {
+        font-size: 35px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .sign-up {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .sign-up h1 {
+        font-size: 30px;
+    }
+
+    .sign-up p {
+        font-size: 15px;
+    }
+
+    .input {
+        gap: 8px;
+    }
+
+    .sign-up input {
+        height: 42px;
+        padding: 0 8px;
+        font-size: 13px;
+    }
+
+    .sign-up .terms {
+        font-size: 12px;
+    }
+
+    .sign-up button {
+        width: 100%;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 350px) {
+    .input {
+        flex-direction: column;
+    }
+
+    .sign-up {
+        padding: 18px 12px;
+    }
+
+    .sign-up h1 {
+        font-size: 27px;
+    }
+}
